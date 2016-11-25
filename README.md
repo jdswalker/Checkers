@@ -19,7 +19,7 @@ Program Compilation
 
 **Program Screenshot from Cygwin**
 
-![Alt text](./img/CheckerThisOut.png?raw=true "Checkers Screenshot")
+<img src="./img/CheckerThisOut.png" alt="Checkers Screenshot" height="1050" width="801">
 
 **Finish Game in 20 Moves**
 Move          Effect
