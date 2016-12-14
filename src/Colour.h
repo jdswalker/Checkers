@@ -1,11 +1,10 @@
-// Authors: @ColinVDH and @JDSWalker
-// Created on: November 16, 2016
+// Authors: @JDSWalker and @ColinVDH
 // Copyrighted 2016 under the MIT license:
 //  http://www.opensource.org/licenses/mit-license.php
 
-#ifndef COLOURS_FOR_CHECKERS_PIECES_H
-#define COLOURS_FOR_CHECKERS_PIECES_H
+#ifndef CHECKERS_ENUM_FOR_PIECE_COLOURS_H_
+#define CHECKERS_ENUM_FOR_PIECE_COLOURS_H_
 
 enum class Colour { DARK, LIGHT };
 
-#endif // COLOURS_FOR_CHECKERS_PIECES_H
+#endif // CHECKERS_ENUM_FOR_PIECE_COLOURS_H_

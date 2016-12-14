@@ -1,11 +1,10 @@
-// Authors: @ColinVDH and @JDSWalker
-// Created on: November 18, 2016
+// Authors: @JDSWalker and @ColinVDH
 // Copyrighted 2016 under the MIT license:
 //  http://www.opensource.org/licenses/mit-license.php
 
-#ifndef TYPES_OF_PLAYING_PIECES_H
-#define TYPES_OF_PLAYING_PIECES_H
+#ifndef CHECKERS_ENUM_FOR_TYPES_OF_PLAYING_PIECES_H_
+#define CHECKERS_ENUM_FOR_TYPES_OF_PLAYING_PIECES_H_
 
 enum class PieceType { NORMAL, KING };
 
-#endif // TYPES_OF_PLAYING_PIECES_H
+#endif // CHECKERS_ENUM_FOR_TYPES_OF_PLAYING_PIECES_H_
