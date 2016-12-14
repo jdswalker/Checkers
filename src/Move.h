@@ -1,26 +1,30 @@
-// Authors: @ColinVDH and @JDSWalker
-// Created on: November 10, 2016
+// Authors: @JDSWalker and @ColinVDH
 // Copyrighted 2016 under the MIT license:
 //   http://www.opensource.org/licenses/mit-license.php
 
-#ifndef CHECKERS_MOVE_H
-#define CHECKERS_MOVE_H
+#ifndef CHECKERS_GAME_MOVE_SEQUENCE_HANDLER_H_
+#define CHECKERS_GAME_MOVE_SEQUENCE_HANDLER_H_
 
-#include <string>
-#include <vector>
-#include <array>
+#include <vector>     // vector
+#include <utility>    // pair, make_pair
 
 class Move {
  public:
-  Move(std::vector< std::array<int, 2> > newSequence);
-  bool HasNext();
-  std::array<int, 2> GetFirst();
-  std::array<int, 2> GetNext();
-  int GetLength();
+  Move();
+  Move(std::vector< std::pair<int,int> > newSequence);
+  
+  std::pair<int,int> GetFirst();
+  std::pair<int,int> GetNext();
+  bool HasAnotherMove();
+  std::vector< std::pair<int,int> > GetMoveSequence() const;
+  int GetMoveSequenceLength();
+  
+  bool operator==(const Move &otherMoveSequence) const;
+  bool operator!=(const Move &otherMoveSequence) const;
 
  private:
-  std::vector< std::array<int, 2> > sequence;
-  unsigned int cursor = 0;
+  int cursor;
+  std::vector< std::pair<int,int> > sequence;
 };
 
-#endif // CHECKERS_MOVE_H
+#endif // CHECKERS_GAME_MOVE_SEQUENCE_HANDLER_H_

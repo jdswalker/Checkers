@@ -1,34 +1,37 @@
-//
-// Created by colin on 11/11/16.
-//
+// Authors: @JDSWalker and @ColinVDH
+// Copyrighted 2016 under the MIT license:
+//   http://www.opensource.org/licenses/mit-license.php
 
-#ifndef CHECKERS_GAMEUI_H
-#define CHECKERS_GAMEUI_H
+#ifndef CHECKERS_GAME_USER_INTERFACE_H_
+#define CHECKERS_GAME_USER_INTERFACE_H_
 
-#include <memory>
+#include <memory>       // shared_ptr
 
 #include "GameBoard.h"
-#include "Player.h"
-
+#include "GameError.h"
 #include "GameUI.h"
+#include "Player.h"
 
 class GameUI {
  public:
   GameUI();
-  void InitUI(std::shared_ptr<GameBoard> newBoard, std::shared_ptr<Player> newPlayer1, std::shared_ptr<Player> newPlayer2);
-  void MainMenu();
-
-  void InvalidInputMessage();
-  void IllegalMoveMessage();
-  void UpdateBoard(bool updateTurn);
-  void EndGame(bool player1_wins);
   
+  void InitUI(std::shared_ptr<GameBoard> newBoard,
+              std::shared_ptr<Player> newPlayer1,
+              std::shared_ptr<Player> newPlayer2);
+      
+  void OutputMainMenu();
+  void OutputGameBoard(bool updateTurn);
+  void OutputGameOver(bool player1_wins);
+  void OutputQuitProgram();
+  
+  void OutputErrorMessage(GameError errorType);
+
  private:
   std::shared_ptr<GameBoard> board;
   std::shared_ptr<Player> player1;
   std::shared_ptr<Player> player2;
-  unsigned int turn_number;
-  bool board_is_flipped_up;
+  int turn_number;
 };
 
-#endif //CHECKERS_GAMEUI_H
+#endif // CHECKERS_GAME_USER_INTERFACE_H_
