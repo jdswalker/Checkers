@@ -1,11 +1,11 @@
 # CSCI 3132 - Object-oriented Text-based UI Checkers  
-Authors: [James Walker](github.com/JDSWalker/) \& [Colin Vandenhof](github.com/ColinVDH/)  
-©2016 under the [MIT license](www.opensource.org/licenses/mit-license.php)  
+Authors: James Walker \& [Colin Vandenhof]  
+©2017 under the [MIT license]  
 
 ## Overview  
 
 #### Motivation:
-This C++ program was developed as part of a group project for CSCI 3132, [Object-orientation and Generic Programming](academiccalendar.dal.ca/Catalog/ViewCatalog.aspx?pageid=viewcatalog&topicgroupid=10330&entitytype=CID&entitycode=CSCI+3132). The goal of the project was to implement a game with a text-based user interface and show some of the object-oriented concepts learned throughout the course. To this end, my group implemented the popular [English Checkers](https://en.wikipedia.org/wiki/English_draughts/) version of the game.  
+This C++ program was developed as part of a group project for CSCI 3132, [Object-orientation and Generic Programming]. The goal of the project was to implement a game with a text-based user interface and show some of the object-oriented concepts learned throughout the course. To this end, my group implemented the popular [English Checkers] version of the game.  
 
 #### Program Status & Known Issues:  
 - [x] Implement two-player mode  
@@ -15,9 +15,8 @@ This C++ program was developed as part of a group project for CSCI 3132, [Object
 
 #### Required Tools:  
 - make   
-- g++  
-- C++11
-- Unix-based console that supports ANSI and Unicode  
+- C++11 compiler such as [g++] or eqivalent  
+- Terminal or console that supports ANSI and Unicode output  
 
 #### Compilation and Program Execution:  
 <pre>$ make  
@@ -54,3 +53,9 @@ $ ./Checkers.exe</pre>
 | 19 (Red)    | 4-8      | A8 B7       |                                 |  
 | 20 (White)  | 3×12     | A6 C8       |_Player 1 (Red) Loses Piece_     |  
 |**Game Over**| ***-***  | ***-***     |**_Player 2 (White) wins_**      |  
+
+[Colin Vandenhof]: http://github.com/ColinVDH/  
+[MIT license]: http://www.opensource.org/licenses/mit-license.php  
+[Object-orientation and Generic Programming]: http://academiccalendar.dal.ca/Catalog/ViewCatalog.aspx?pageid=viewcatalog&topicgroupid=10330&entitytype=CID&entitycode=CSCI+3132  
+[English Checkers]: http://wikipedia.org/wiki/English_draughts/  
+[g++]: http://gcc.gnu.org/  
